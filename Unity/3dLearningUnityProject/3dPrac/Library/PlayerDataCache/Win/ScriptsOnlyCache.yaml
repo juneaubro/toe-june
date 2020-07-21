@@ -53,29 +53,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11158}
     - Class: 114
       Script: {instanceID: 11336}
     - Class: 114
       Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 11768}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 12968}
+      Script: {instanceID: 12682}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 21288}
+      Script: {instanceID: 12934}
     - Class: 114
-      Script: {instanceID: 25762}
+      Script: {instanceID: 12980}
     - Class: 114
-      Script: {instanceID: 28608}
+      Script: {instanceID: 13040}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,7 +243,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 6cef1a2f5ae3af78f4815d6fb076c559
+      Hash: a1893a77a201a5456e8088f99df6b6dc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -255,10 +255,22 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 69fcaeeca9d6313314dda88c37ff4599
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowGUI
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 4701124375376784d36e75448a05319a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GE_UIResponder
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -321,6 +333,18 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 7b6e37f22632e0a0d886d9c843e87905
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: FantasySkyFree
+    className: GE_FantasySkyboxFREE_Demo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GE_ToggleFullScreenUI
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -339,6 +363,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 9c0d780a117e7b34152c10072bd44a5e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: FantasySkyFree
+    className: GE_FantasySkyboxFREE_UIs
+  - hash:
+      serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -349,6 +379,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fps
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -445,6 +481,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 814fe93bb11c8d826307ef539084d69b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickupTrigger
   - hash:
       serializedVersion: 2
       Hash: da3c5c70160a08a47f6f147666fa3d80
@@ -547,48 +589,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 814fe93bb11c8d826307ef539084d69b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PickupTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 69fcaeeca9d6313314dda88c37ff4599
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShowGUI
-  - hash:
-      serializedVersion: 2
-      Hash: 4701124375376784d36e75448a05319a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GE_UIResponder
-  - hash:
-      serializedVersion: 2
-      Hash: 7b6e37f22632e0a0d886d9c843e87905
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: FantasySkyFree
-    className: GE_FantasySkyboxFREE_Demo
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GE_ToggleFullScreenUI
-  - hash:
-      serializedVersion: 2
-      Hash: 9c0d780a117e7b34152c10072bd44a5e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: FantasySkyFree
-    className: GE_FantasySkyboxFREE_UIs
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Fps
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene 1.unity

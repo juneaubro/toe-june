@@ -63,20 +63,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
-    <Compile Include="Assets\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
-    <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
-    <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
-    <Compile Include="Assets\Scripts\Fps.cs" />
-    <Compile Include="Assets\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Scripts\PickupTrigger.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\ShowGUI.cs" />
-    <None Include="Assets\Fantasy Chess RPG Character - Arthur\readme.txt" />
-    <None Include="Assets\Fantasy Skybox FREE\Fog and Ambient references.txt" />
-    <None Include="Assets\GE Common Assets\Readme.txt" />
-    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
+    <Compile Include="Assets\Borrowed Assets\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
+    <Compile Include="Assets\Borrowed Assets\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
+    <Compile Include="Assets\Borrowed Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
+    <Compile Include="Assets\Borrowed Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Editors\MapGeneratorEditor.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\EndlessTerrain.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Fps.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\LoadNextScene.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\MapDisplay.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\MapGenerator.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\MeshGenerator.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\MeshGeneratorOLD.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Noise.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\PickupTrigger.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\ShowGUI.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\TextureGenerator.cs" />
+    <None Include="Assets\Borrowed Assets\Fantasy Chess RPG Character - Arthur\readme.txt" />
+    <None Include="Assets\Borrowed Assets\Fantasy Skybox FREE\Fog and Ambient references.txt" />
+    <None Include="Assets\Borrowed Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\Borrowed Assets\Fantasy Skybox FREE\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -637,6 +646,24 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

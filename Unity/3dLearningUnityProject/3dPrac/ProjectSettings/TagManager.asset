@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Pickup
+  - newCamera
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - Player
   - Ground
-  - 
+  - thatOtherDamnPlace
   - 
   - 
   - 

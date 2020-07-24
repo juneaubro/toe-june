@@ -77,6 +77,8 @@
     <Compile Include="Assets\Our Assets\Scripts\MeshGeneratorOLD.cs" />
     <Compile Include="Assets\Our Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Our Assets\Scripts\Noise.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\OpenDoor.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Our Assets\Scripts\PickupTrigger.cs" />
     <Compile Include="Assets\Our Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Our Assets\Scripts\PlayerMovement.cs" />
@@ -617,11 +619,23 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
@@ -641,29 +655,17 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools.Editor">
       <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/juneau/Documents/GitHub/toe-june/Unity/3dLearningUnityProject/3dPrac/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

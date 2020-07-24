@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Door
   - Pickup
   - newCamera
+  - openDoor
+  - Door
+  - test
   layers:
   - Default
   - TransparentFX

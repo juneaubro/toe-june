@@ -11,10 +11,11 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 1f;
 
     public Transform groundCheck;
-    public static float groundDistance = 0.1f;
+    public float groundDistance = 0.15f;
     public LayerMask groundMask;
     public float slopeForce = 0f;
     public float slopeForceRayLength = 0f;
+    public float fallingMultiplier = 1.15f;
 
     Vector3 velocity;
     bool isGrounded;
@@ -34,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
+        if(velocity.y < -0.5 && !isGrounded)
+        {
+            velocity.y *= fallingMultiplier;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -44,14 +50,9 @@ public class PlayerMovement : MonoBehaviour
         if ((z != 0 || x != 0) && OnSlope())
             cc.Move(Vector3.down * cc.height / 2 * slopeForce * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
-
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Break();
         }
 
         velocity.y += gravity * Time.deltaTime;

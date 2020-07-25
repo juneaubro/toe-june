@@ -7,3 +7,5 @@ yea its time
 7/21/2020 update 2: after an indefinite amount of hours, june has typed meshData an astounding amount of times as of 3am and i broke the lighting and scene transitions for too many hours
 
 7/24/2020 update 3: i was not told he pushed but k, quite frankely i dont know what was changed but theres half of a procedural map now, so thats cool
+
+7/25/2020 update 4: 3am- 2d project was born but took 2 hours to figure out how to repeat the damn tiles with a prefab not being published on unity collab (╯°□°)╯︵ ┻━┻

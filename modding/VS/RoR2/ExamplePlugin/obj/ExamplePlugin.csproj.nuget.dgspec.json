@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj": {}
+    "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj": {
+    "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
+        "projectUniqueName": "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
         "projectName": "ExamplePlugin",
-        "projectPath": "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
-        "packagesPath": "C:\\Users\\juneau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\obj\\",
+        "projectPath": "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
+        "packagesPath": "C:\\Users\\tonyg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juneau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tonyg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

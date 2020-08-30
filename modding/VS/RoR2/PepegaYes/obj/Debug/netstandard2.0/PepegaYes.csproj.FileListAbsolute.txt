@@ -1,0 +1,16 @@
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\PepegaYes.deps.json
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\PepegaYes.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\PepegaYes.pdb
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\0Harmony.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\Assembly-CSharp.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\BepInEx.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\BepInEx.Harmony.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\UnityEngine.CoreModule.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\bin\Debug\netstandard2.0\UnityEngine.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.csprojAssemblyReference.cache
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.csproj.CoreCompileInputs.cache
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.AssemblyInfoInputs.cache
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.AssemblyInfo.cs
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.csproj.CopyComplete
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.dll
+C:\Users\juneau\Documents\GitHub\toe-june\modding\VS\RoR2\PepegaYes\obj\Debug\netstandard2.0\PepegaYes.pdb

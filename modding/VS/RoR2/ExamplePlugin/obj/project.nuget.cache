@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MRKVO5o3vYeC4n2KlPYhvQH1j0fLhM5OyamDX0vEyKqAWkcR8ABnKWu7Y7oCYcqzDE8WBqIqawNJXOCiCAua5A==",
+  "dgSpecHash": "3rDuImTdO8fj5frPoVbWPX3sPu90wtV5Qq/47dQLAYv5VKveHuRKV+GZvuVcRt0iAAm4A/1iRU8Ud5DF+6Ip2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juneau\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
+  "projectFilePath": "C:\\Users\\tonyg\\Documents\\GitHub\\toe-june\\modding\\VS\\RoR2\\ExamplePlugin\\ExamplePlugin.csproj",
   "expectedPackageFiles": [
-    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\tonyg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tonyg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

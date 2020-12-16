@@ -4,22 +4,41 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject groundCheck;
+
     [SerializeField]
     private float moveSpeed = 5f;
     [SerializeField]
     private float jumpForce = 5f;
 
+    private bool isGrounded;
+
     private Rigidbody2D rb;
+    private Animator ani;
+    private Vector2 movement;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = rb.velocity.y;
+
+        ani.SetFloat("xSpeed", movement.x * movement.x); // sqr will never be negative
+        ani.SetFloat("ySpeed", movement.y);
+
+        if (movement.y == 0)
+            ani.SetBool("onGround", true);
+        else
+            ani.SetBool("onGround", false);
+
         if (rb.velocity.x > 0.01f)
             Flip(1);
 
@@ -27,6 +46,7 @@ public class PlayerController : MonoBehaviour
             Flip(-1);
 
         Jump();
+
     }
 
     private void FixedUpdate()
@@ -43,14 +63,24 @@ public class PlayerController : MonoBehaviour
 
     void MoveChar()
     {
-        // rb move pos
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
     }
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            // addforce impulse
-        }
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground")
+            isGrounded = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground")
+            isGrounded = false;
     }
 }

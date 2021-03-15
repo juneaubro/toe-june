@@ -2,6 +2,8 @@
  
 yea its time
 
+2/15/2021 update 6 (toe): started another project (ikr), only basic movement/looking implimented but i typed it all so that's pretty cool
+
 12/15/2020 update 5 (june): the main push for today was the implementation of multiplayer for 2D prac :) .......... my first README update lmao
 
 7/25/2020 update 4 (toe): 3am- 2d project was born but took 2 hours to figure out how to repeat the damn tiles with a prefab not being published on unity collab (╯°□°)╯︵ ┻━┻

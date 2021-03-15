@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     public float upLimit = -50;
     public float downLimit = 50;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         Move();

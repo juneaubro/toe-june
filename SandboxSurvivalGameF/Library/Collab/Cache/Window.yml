@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Male_04_V01 1.prefab
-    - Assets/Prefabs/Male_04_V01 1.prefab.meta
     - Assets/Scripts/PlayerController.cs
-    - Assets/Scripts/PlayerController.cs.meta
     - 
-    m_Values: 0101010101
+    m_Values: 0000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -14,4 +14,4 @@ yea its time
 
 2/15/2021 update 6 (toe): started another project (ikr), only basic movement/looking implimented but i typed it all so that's pretty cool
 
-1/1/2022 update 7 (toe): lol we're back
+1/1/2022 update 7 (toe): lol we're back. (june) yes.

@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/PlayerAnimation.cs
     - 
-    m_Values: 0101
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: racetrack go brr
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

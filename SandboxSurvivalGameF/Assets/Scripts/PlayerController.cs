@@ -3,83 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-public class PlayerController : MonoBehaviour
-{
+[RequireComponent(typeof(CharacterController))]
+public class PlayerController : MonoBehaviour{
+    private Rigidbody rb;
+    private CharacterController cc;
+    private float speed = 0.1f;
+    private float yVel = 0f;
+    private float gravity;
+    private float gravityMultiplier = 0.01f;
 
-    public float walkSpeed = 0.5f;
-    public float sprintSpeed = 1.5f;
-    public float maxSpeed = 15.0f;
-    public float maxVelocityChange = 10.0f;
-    public float gravity = 15.0f;
-    public bool canJump = true;
-    public bool canSprint = true;
-    public float jumpHeight = 2.0f;
-    private bool grounded = false;
-    public static Vector3 targetVelocity;
-    public bool b_canAnimate = false;
-
-    Rigidbody rb;
-
-    void Awake()
-    {
+    private void Start() {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-        rb.useGravity = false;
+        cc = GetComponent<CharacterController>();
+        gravity = Physics.gravity.y;
     }
 
-    void Update()
-    {
-        if(grounded)
-        {
-            if (Input.GetButton("Forwards") || Input.GetButton("Backwards") || Input.GetButton("Left") || Input.GetButton("Right"))
-            {
-                b_canAnimate = true;
-
-                // Calculate how fast we should be moving
-                targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-                targetVelocity = transform.TransformDirection(targetVelocity);
-                targetVelocity = targetVelocity.normalized;
-                targetVelocity *= walkSpeed;
-
-                Vector3 velocityChange = (targetVelocity - rb.velocity);
-                velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
-                velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
-                velocityChange.y = 0;
-
-                if (rb.velocity.magnitude < maxVelocityChange)
-                    rb.AddForce(velocityChange, ForceMode.VelocityChange);
-
-            } else
-            {
-                rb.velocity = Vector3.Lerp(rb.velocity, Vector3.zero, 0.5f);
-            }
-
-            // Jump
-            if (canJump && Input.GetButton("Jump"))
-            {
-                rb.velocity = new Vector3(rb.velocity.x, CalculateJumpVerticalSpeed(), rb.velocity.z);
-            }
-
-            // Sprint
-            //if (canSprint && Input.GetButton("Sprint") && Input.GetButton("Forwards") && (rb.velocity.magnitude < 20f))
-            //    rb.
-
-        }
-
-        rb.AddForce(new Vector3(0, -gravity * rb.mass, 0));
-
-        grounded = false;
+    private void FixedUpdate() {
+        Move();
     }
 
-    void OnCollisionStay()
-    {
-        grounded = true;
-    }
-
-    float CalculateJumpVerticalSpeed()
-    {
-        return Mathf.Sqrt(2 * jumpHeight * gravity);
+    private void Move() {
+        Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal") * speed, 
+            yVel, 
+            Input.GetAxisRaw("Vertical") * speed);
+        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.z;
+        if (cc.isGrounded && gravity < 0)
+            yVel = 0f;
+        yVel += -(gravityMultiplier);
+        move.y = yVel;
+        cc.Move(move);
     }
 }

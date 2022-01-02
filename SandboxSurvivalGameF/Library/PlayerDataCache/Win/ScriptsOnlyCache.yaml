@@ -8,7 +8,6 @@ ScriptsOnlyBuild:
     - PlayerController
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -62,15 +61,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 1862}
     - Class: 114
-      Script: {instanceID: 6182}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 6800}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 7928}
+      Script: {instanceID: 4058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -260,7 +259,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: aeb62064152571d531d10dd644ab01d6
+      Hash: ded0ebbb63a9ae3e5978244829f8d173
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -549,4 +548,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: Z:/github/toe-june/SandboxSurvivalGameF/Builds/SandboxSurvivalGameF.exe
+  playerPath: C:/Users/tonyg/Documents/GitHub/toe-june/SandboxSurvivalGameF/Builds/SandboxSurvivalGameF.exe

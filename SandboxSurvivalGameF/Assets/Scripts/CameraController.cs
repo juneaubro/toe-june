@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
     void Look() {
         rotation.y += Input.GetAxis("Mouse X");
         rotation.x += -Input.GetAxis("Mouse Y");
-        rotation.x = Mathf.Clamp(rotation.x, -20f, 20f);
+        rotation.x = Mathf.Clamp(rotation.x, -30f, 30f);
         transform.eulerAngles = new Vector2(0, rotation.y) * lookSpeed;
         cameraHolder.transform.localRotation = Quaternion.Euler(rotation.x * lookSpeed, 0, 0);
     }

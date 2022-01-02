@@ -8,24 +8,22 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 10.0f;
-    public float gravity = 15.0f;
+    public float walkSpeed = 0.5f;
+    public float sprintSpeed = 1.5f;
+    public float maxSpeed = 15.0f;
     public float maxVelocityChange = 10.0f;
+    public float gravity = 15.0f;
     public bool canJump = true;
+    public bool canSprint = true;
     public float jumpHeight = 2.0f;
     private bool grounded = false;
     public static Vector3 targetVelocity;
-
-    //private Animator animator;
     public bool b_canAnimate = false;
-    public static float velocityX;
-    public static float velocityZ;
 
     Rigidbody rb;
 
     void Awake()
     {
-        //animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         rb.useGravity = false;
@@ -33,35 +31,43 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (grounded)
+        if(grounded)
         {
-            // Calculate how fast we should be moving
-            targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            targetVelocity = transform.TransformDirection(targetVelocity);
-            targetVelocity *= speed;
+            if (Input.GetButton("Forwards") || Input.GetButton("Backwards") || Input.GetButton("Left") || Input.GetButton("Right"))
+            {
+                b_canAnimate = true;
 
-            // Apply a force that attempts to reach our target velocity
-            Vector3 velocity = rb.velocity;
-            Vector3 velocityChange = (targetVelocity - velocity);
-            velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
-            velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
-            velocityChange.y = 0;
-            rb.AddForce(velocityChange, ForceMode.VelocityChange);
+                // Calculate how fast we should be moving
+                targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                targetVelocity = transform.TransformDirection(targetVelocity);
+                targetVelocity = targetVelocity.normalized;
+                targetVelocity *= walkSpeed;
 
-            b_canAnimate = true;
-            velocityX = velocity.x;
-            velocityZ = velocity.z;
+                Vector3 velocityChange = (targetVelocity - rb.velocity);
+                velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
+                velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
+                velocityChange.y = 0;
 
-            //animator.SetFloat("speed", Math.Abs(velocity.x + velocity.z));
+                if (rb.velocity.magnitude < maxVelocityChange)
+                    rb.AddForce(velocityChange, ForceMode.VelocityChange);
+
+            } else
+            {
+                rb.velocity = Vector3.Lerp(rb.velocity, Vector3.zero, 0.5f);
+            }
 
             // Jump
             if (canJump && Input.GetButton("Jump"))
             {
-                rb.velocity = new Vector3(velocity.x, CalculateJumpVerticalSpeed(), velocity.z);
+                rb.velocity = new Vector3(rb.velocity.x, CalculateJumpVerticalSpeed(), rb.velocity.z);
             }
+
+            // Sprint
+            //if (canSprint && Input.GetButton("Sprint") && Input.GetButton("Forwards") && (rb.velocity.magnitude < 20f))
+            //    rb.
+
         }
 
-        // We apply gravity manually for more tuning control
         rb.AddForce(new Vector3(0, -gravity * rb.mass, 0));
 
         grounded = false;
@@ -74,8 +80,6 @@ public class PlayerController : MonoBehaviour
 
     float CalculateJumpVerticalSpeed()
     {
-        // From the jump height and gravity we deduce the upwards speed 
-        // for the character to reach at the apex.
         return Mathf.Sqrt(2 * jumpHeight * gravity);
     }
 }

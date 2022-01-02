@@ -23,6 +23,8 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     void Animate() {
+
+        //lmao
         if (movement.x > 0) {                   // moving right
             animator.SetFloat("VelocityX", 1);
         } else if(movement.x < 0) {             // moving left

@@ -64,17 +64,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 2436}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 3232}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 4150}
+      Script: {instanceID: 4714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -89,9 +89,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 193
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 205
+      Script: {instanceID: 0}
     - Class: 218
+      Script: {instanceID: 0}
+    - Class: 226
+      Script: {instanceID: 0}
+    - Class: 227
+      Script: {instanceID: 0}
+    - Class: 228
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -340,7 +350,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 75e641241f562015b489015f20ac0c14
+      Hash: a1d6ce5b17915db5a90737d9c29934b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -767,4 +777,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: Z:/github/toe-june/SandboxSurvivalGameF/Builds/SandboxSurvivalGameF.exe
+  playerPath: C:/Users/tonyg/Documents/GitHub/toe-june/SandboxSurvivalGameF/Builds/SandboxSurvivalGameF.exe

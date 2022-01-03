@@ -3,35 +3,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour{
+public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
-    private CharacterController cc;
-    private float speed = 0.1f;
-    private float yVel = 0f;
-    private float gravity;
-    private float gravityMultiplier = 0.01f;
+    private Vector3 input;
+    private Vector3 mov;
+    private Vector3 gravity;
+    private bool jump = false;
+    public bool grounded;
+    public float gravityMultiplier = 1f;
+    public float jumpForce = 7f;
+    public float walkSpeed = 0.1f;
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
-        cc = GetComponent<CharacterController>();
-        gravity = Physics.gravity.y;
     }
 
     private void FixedUpdate() {
         Move();
+        Gravity();
+        if (jump)
+            Jump();
+    }
+
+    private void Update() {
+        grounded = GroundCheck.isGrounded;
+        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+            jump = true;
     }
 
     private void Move() {
-        Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal") * speed, 
-            yVel, 
-            Input.GetAxisRaw("Vertical") * speed);
-        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.z;
-        if (cc.isGrounded && gravity < 0)
-            yVel = 0f;
-        yVel += -(gravityMultiplier);
-        move.y = yVel;
-        cc.Move(move);
+        input = new Vector3(
+            Input.GetAxisRaw("Horizontal") * walkSpeed,
+            0,
+            Input.GetAxisRaw("Vertical") * walkSpeed);
+        mov = input.x * transform.right + input.z * transform.forward;
+
+        rb.AddForce(mov);
+    }
+
+    private void Gravity() {
+        if (!grounded) {
+            gravity = new Vector3(
+                0,
+                -(Mathf.Abs(Mathf.Pow(Physics.gravity.y, 2f) * gravityMultiplier)),
+                0);
+
+            rb.AddForce(gravity);
+        }
+    }
+
+    private void Jump() {
+        rb.velocity = new Vector3(mov.x,1,mov.z) * jumpForce;
+        jump = false;
     }
 }

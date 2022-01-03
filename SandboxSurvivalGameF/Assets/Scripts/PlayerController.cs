@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
     private Vector3 input;
     private Vector3 mov;
-    private Vector3 gravity;
     private bool jump = false;
+    public float SPEED_LIMITER = 0.01f;
     public bool grounded;
     public float gravityMultiplier = 1f;
-    public float jumpForce = 7f;
-    public float walkSpeed = 0.1f;
+    public float jumpForce = 200f;
+    public float walkSpeed = 23f;
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
@@ -45,17 +45,15 @@ public class PlayerController : MonoBehaviour {
 
     private void Gravity() {
         if (!grounded) {
-            gravity = new Vector3(
-                0,
-                -(Mathf.Abs(Mathf.Pow(Physics.gravity.y, 2f) * gravityMultiplier)),
-                0);
-
-            rb.AddForce(gravity);
+            rb.AddForce(new Vector3(0, -1, 0) * gravityMultiplier, ForceMode.Force);
+        } else {
+            rb.AddForce(new Vector3(0, rb.velocity.y * -1, 0));
         }
+        // maybe do F = ma later
     }
 
     private void Jump() {
-        rb.velocity = new Vector3(mov.x,1,mov.z) * jumpForce;
+        rb.AddForce(new Vector3(mov.x*SPEED_LIMITER,1,mov.z*SPEED_LIMITER) * jumpForce, ForceMode.VelocityChange);
         jump = false;
     }
 }

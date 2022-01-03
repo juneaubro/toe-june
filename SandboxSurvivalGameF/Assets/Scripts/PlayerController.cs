@@ -10,14 +10,18 @@ public class PlayerController : MonoBehaviour {
     private Vector3 input;
     private Vector3 mov;
     private bool jump = false;
-    public float SPEED_LIMITER = 0.01f;
+
+    public float SPEED_LIMITER = 0.02f;
     public bool grounded;
-    public float gravityMultiplier = 1f;
-    public float jumpForce = 200f;
+    public float gravityMultiplier = 55f;
+    public float jumpForce = 25f;
     public float walkSpeed = 23f;
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
+        rb.mass = 1f;
+        rb.drag = 4f;
+        rb.angularDrag = 2f;
     }
 
     private void FixedUpdate() {
@@ -53,7 +57,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Jump() {
-        rb.AddForce(new Vector3(mov.x*SPEED_LIMITER,1,mov.z*SPEED_LIMITER) * jumpForce, ForceMode.VelocityChange);
+        rb.AddForce(new Vector3(mov.x*SPEED_LIMITER,
+            1,
+            mov.z*SPEED_LIMITER) * jumpForce, 
+            ForceMode.VelocityChange);
         jump = false;
     }
 }

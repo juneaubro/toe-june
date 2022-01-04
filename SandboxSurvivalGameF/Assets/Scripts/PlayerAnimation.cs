@@ -11,11 +11,6 @@ public class PlayerAnimation : MonoBehaviour
     private float animSpeed = 0.05f;
     private float walkingValueMax = 0.4f;
     private float sprintingValueMax = 1.2f;
-    private float[] jumpStates = {
-        1,
-        2,
-        3
-    };
     private bool sprinting;
     private bool grounded;
 
@@ -37,7 +32,7 @@ public class PlayerAnimation : MonoBehaviour
         else
             WalkAnimations();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump") && grounded)
             JumpAnimations();
     }
 
@@ -108,13 +103,7 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     void JumpAnimations() {
-        animator.SetTrigger("jump");
-        animator.SetFloat("vely", Mathf.Lerp(animator.GetFloat("vely"), jumpStates[0], animSpeed));
-
-        if(rb.velocity.y <= 0 && !grounded && animator.GetFloat("vely") == jumpStates[0])
-            animator.SetFloat("vely", Mathf.Lerp(animator.GetFloat("vely"), jumpStates[1], animSpeed));
-        
-        if(grounded && animator.GetFloat("vely") == jumpStates[1])
-            animator.SetFloat("vely", Mathf.Lerp(animator.GetFloat("vely"), jumpStates[3], animSpeed));
+        if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Jump") || !animator.GetCurrentAnimatorStateInfo(0).IsName("Air") || !animator.GetCurrentAnimatorStateInfo(0).IsName("Land"))
+            animator.SetTrigger("jump");
     }
 }

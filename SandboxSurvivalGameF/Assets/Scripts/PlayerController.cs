@@ -9,19 +9,27 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
     private Vector3 input;
     private Vector3 mov;
+<<<<<<< Updated upstream
+    private Vector3 gravity;
     private bool jump = false;
+    public bool grounded;
+    public float gravityMultiplier = 1f;
+    public float jumpForce = 7f;
+    public float walkSpeed = 0.1f;
+=======
+    public static bool jump = false;
+    public static bool sprint = false;
 
     public float SPEED_LIMITER = 0.02f;
     public bool grounded;
     public float gravityMultiplier = 55f;
     public float jumpForce = 25f;
     public float walkSpeed = 23f;
+    public float sprintSpeed = 100.5f;
+>>>>>>> Stashed changes
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
-        rb.mass = 1f;
-        rb.drag = 4f;
-        rb.angularDrag = 2f;
     }
 
     private void FixedUpdate() {
@@ -33,15 +41,34 @@ public class PlayerController : MonoBehaviour {
 
     private void Update() {
         grounded = GroundCheck.isGrounded;
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetButton("Jump") && grounded)
             jump = true;
+        if (Input.GetButton("Sprint") && grounded)
+        {
+            sprint = true;
+        } else
+        {
+            sprint = false;
+        }
     }
 
     private void Move() {
-        input = new Vector3(
-            Input.GetAxisRaw("Horizontal") * walkSpeed,
-            0,
-            Input.GetAxisRaw("Vertical") * walkSpeed);
+        if (!sprint)
+        {
+            input = new Vector3(
+                Input.GetAxisRaw("Horizontal") * walkSpeed,
+                0,
+                Input.GetAxisRaw("Vertical") * walkSpeed);
+            //mov = input.x * transform.right + input.z * transform.forward;
+
+            //rb.AddForce(mov);
+        } else
+        {
+            input = new Vector3(
+                Input.GetAxisRaw("Horizontal") * sprintSpeed,
+                0,
+                Input.GetAxisRaw("Vertical") * sprintSpeed);
+        }
         mov = input.x * transform.right + input.z * transform.forward;
 
         rb.AddForce(mov);
@@ -49,18 +76,17 @@ public class PlayerController : MonoBehaviour {
 
     private void Gravity() {
         if (!grounded) {
-            rb.AddForce(new Vector3(0, -1, 0) * gravityMultiplier, ForceMode.Force);
-        } else {
-            rb.AddForce(new Vector3(0, rb.velocity.y * -1, 0));
+            gravity = new Vector3(
+                0,
+                -(Mathf.Abs(Mathf.Pow(Physics.gravity.y, 2f) * gravityMultiplier)),
+                0);
+
+            rb.AddForce(gravity);
         }
-        // maybe do F = ma later
     }
 
     private void Jump() {
-        rb.AddForce(new Vector3(mov.x * SPEED_LIMITER,
-            1,
-            mov.z * SPEED_LIMITER) * jumpForce,
-            ForceMode.VelocityChange);
+        rb.velocity = new Vector3(mov.x,1,mov.z) * jumpForce;
         jump = false;
     }
 }

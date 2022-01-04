@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Unity.Netcode;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
-public class PlayerController : MonoBehaviour {
+public class PlayerController : NetworkBehaviour {
     private Rigidbody rb;
     private Vector3 input;
     private Vector3 mov;
@@ -41,14 +39,13 @@ public class PlayerController : MonoBehaviour {
             sprint = false;
         }
     }
-    private void Move() {
+    public void Move() {
+        ///////////////////////////////////////////////////////////////////////////////////////////
         if (!sprint) {
             input = new Vector3(
                 Input.GetAxisRaw("Horizontal") * walkSpeed,
                 0,
                 Input.GetAxisRaw("Vertical") * walkSpeed);
-            //mov = input.x * transform.right + input.z * transform.forward;
-            //rb.AddForce(mov);
         } else {
             input = new Vector3(
                 Input.GetAxisRaw("Horizontal") * sprintSpeed,
@@ -57,7 +54,8 @@ public class PlayerController : MonoBehaviour {
         }
         mov = input.x * transform.right + input.z * transform.forward;
         rb.AddForce(mov);
-    }
+    }   
+        ////////////////////////////////////////////////////////////////////////////////////////////
 
     private void Gravity() {
         if (!grounded) {
@@ -73,5 +71,17 @@ public class PlayerController : MonoBehaviour {
             mov.z * SPEED_LIMITER) * jumpForce,
             ForceMode.VelocityChange);
         jump = false;
+    }
+
+    /// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    public NetworkVariable<Vector3> Position = new NetworkVariable<Vector3>();
+
+    public override void OnNetworkSpawn()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.mass = 1f;
+        rb.drag = 4f;
+        rb.angularDrag = 2f;
+        Move();
     }
 }

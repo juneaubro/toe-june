@@ -5,8 +5,11 @@ ScriptsOnlyBuild:
     - CameraController
     - GroundCheck
     - ItemPickup
+    - LightingManager
+    - LightingPreset
     - PlayerAnimation
     - PlayerController
+    - UnityStandardAssets.Water.Water
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.Rider.Editor.dll:
@@ -64,17 +67,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3192}
     - Class: 114
-      Script: {instanceID: 3508}
+      Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 4714}
+      Script: {instanceID: 4664}
+    - Class: 114
+      Script: {instanceID: 4674}
+    - Class: 114
+      Script: {instanceID: 50928}
+    - Class: 114
+      Script: {instanceID: 50930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -93,17 +102,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 205
-      Script: {instanceID: 0}
     - Class: 218
-      Script: {instanceID: 0}
-    - Class: 226
-      Script: {instanceID: 0}
-    - Class: 227
-      Script: {instanceID: 0}
-    - Class: 228
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
@@ -114,6 +113,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -344,13 +349,7 @@ ScriptsOnlyBuild:
     className: TimedObjectDestructor
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: a1d6ce5b17915db5a90737d9c29934b1
+      Hash: cfd580e19fcfd99647ce77c863a058a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -774,6 +773,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: SimpleActivatorMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 13cdd543a42a82ebcd50d546aac1b156
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightingManager
+  - hash:
+      serializedVersion: 2
+      Hash: f4f3c84b91d90b62516ab58611a6ee0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightingPreset
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

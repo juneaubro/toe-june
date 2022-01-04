@@ -18,3 +18,4 @@ yea its time
                  (june): yes.
 
 1/3/2022 update 8 (june): almost lost everything lmao. conflict errors man.
+                  (toe): i guess merge conflicts should be acknowledged

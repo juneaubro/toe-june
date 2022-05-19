@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5751057103452115537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698684321819402263}
+  m_Layer: 0
+  m_Name: height
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698684321819402263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751057103452115537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.031, y: 0.762, z: -0.0352239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7750591395446889312}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7750591394416437289
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,8 +73,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.22, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.32, y: 0.16253985, z: 1}
+  m_Center: {x: 0, y: 0.028730087, z: 0}
 --- !u!114 &7750591394416437290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +184,6 @@ GameObject:
   - component: {fileID: 7750591395446889324}
   - component: {fileID: 7750591395446889326}
   - component: {fileID: 7750591395446889327}
-  - component: {fileID: 7750591395446889325}
   - component: {fileID: 2090229260}
   - component: {fileID: 6963604136325469565}
   m_Layer: 0
@@ -178,6 +207,7 @@ Transform:
   - {fileID: 7750591394604959302}
   - {fileID: 4117388678976172255}
   - {fileID: 7750591394416437288}
+  - {fileID: 1698684321819402263}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -193,12 +223,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b5b9eafbc1f6e449229efd4697e20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SPEED_LIMITER: 0.02
-  grounded: 0
-  gravityMultiplier: 55
-  jumpForce: 25
-  walkSpeed: 23
-  sprintSpeed: 100.5
+  horizontalInputName: Horizontal
+  verticalInputName: Vertical
+  movementSpeed: 6
+  slopeForce: 5
+  slopeForceRayLength: 1.5
+  jumpFallOff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1.0020828
+      outSlope: -1.0020828
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: -0.0020828247
+      inSlope: -1.0020828
+      outSlope: -1.0020828
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  jumpMultiplier: 10
+  jumpKey: 32
   Position:
     m_InternalValue: {x: 0, y: 0, z: 0}
 --- !u!114 &7750591395446889314
@@ -254,22 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ad7187974bfcc4881940407e332905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &7750591395446889325
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7750591395446889318}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 4
-  m_AngularDrag: 2
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!114 &2090229260
 MonoBehaviour:
   m_ObjectHideFlags: 0

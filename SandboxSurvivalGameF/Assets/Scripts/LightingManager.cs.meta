@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: 51170d924e316e9449da9d0cc2d03fb9
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences:
-  - directionalLight: {instanceID: 0}
-  - preset: {fileID: 11400000, guid: daae2bb641d56a84e92d1e08cf5d7063, type: 2}
-  - clockText: {instanceID: 0}
-  - player: {instanceID: 0}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:47be92d3fda401d8c0857224705f1fa32fac41f3723ad47ee299fbedd7e65ca0
+size 417

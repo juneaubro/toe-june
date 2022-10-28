@@ -1,15 +1,3 @@
-﻿using UnityEngine;
-using UnityEditor;
-using UnityEngine.TestTools;
-using NUnit.Framework;
-using System.Collections;
-using Mono.Cecil;
-using Mono.Cecil.Cil;
-
-class MonoCecilEditorTests {
-
-	[Test]
-	public void EditorSampleTestSimplePasses() {
-		Assert.IsTrue(true);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:22a22b1fcd4228b26a3cd25594e5dbe0271e80867f0eba58124d225c5a7e2e06
+size 272

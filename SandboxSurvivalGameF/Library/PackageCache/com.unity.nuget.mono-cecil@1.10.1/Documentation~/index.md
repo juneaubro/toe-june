@@ -1,18 +1,3 @@
-# Mono.Cecil Unity Package
-
-***This is a package intended for internal Unity Development Projects and as such this package is not supported. Use at your own risk.***
-
-This is a Unity package for Mono.Cecil and corresponds to Mono.Cecil version 0.10.0.
-
-Documentation for this Package is provided as links to the Mono.Cecil Documentation.
-
-## Mono.Cecil is a library to generate and inspect programs and libraries in the ECMA CIL form.
-
-### Documentation
-
-[Mono Project Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/)
-[Mono.Cecil Wiki](https://github.com/jbevain/cecil/wiki)
-[Mono.Cecil Development Log](https://cecil.pe/)
-[Mono.Cecil Source Code](https://github.com/jbevain/cecil)
-
-***This is a package intended for internal Unity Development Projects and as such this package is not supported. Use at your own risk.***
+version https://git-lfs.github.com/spec/v1
+oid sha256:c13097f07195d703ceb002fb17dece371e04fe924e77479366e816efbc08b8a7
+size 857

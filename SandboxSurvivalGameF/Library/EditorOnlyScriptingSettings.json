@@ -1,1 +1,3 @@
-{"m_DefineSymbols":{"m_Value":[{"first":1,"second":"CROSS_PLATFORM_INPUT"},{"first":4,"second":"CROSS_PLATFORM_INPUT;MOBILE_INPUT"},{"first":7,"second":"CROSS_PLATFORM_INPUT;MOBILE_INPUT"},{"first":14,"second":"MOBILE_INPUT"}],"m_Initialized":true},"m_AllowUnsafeCode":{"m_Value":false,"m_Initialized":true},"m_ScriptDebugInfoEnabled":{"m_Value":true,"m_Initialized":true}}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66003cc3d202f0cd268bf00e604b6a89f9e429c051ce67e50bf2d4bf97ea2c7a
+size 304

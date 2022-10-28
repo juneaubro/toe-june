@@ -1,11 +1,3 @@
-# Changelog
-
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
-
-## [0.1.0] - 2020.11.23 - Initial Release
-
-### Added
-
-- RPM Avatar Asset Import
-- Project Setup
+version https://git-lfs.github.com/spec/v1
+oid sha256:365a8e20c64402fa0409e294f97a9f7f974c09bbf4512f94f1bc4a91093f12d5
+size 257

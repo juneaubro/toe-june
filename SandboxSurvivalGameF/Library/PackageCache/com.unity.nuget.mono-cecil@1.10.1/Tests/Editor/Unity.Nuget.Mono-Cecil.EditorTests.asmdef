@@ -1,20 +1,3 @@
-{
-    "name": "Unity.Nuget.Mono-Cecil",
-    "references": [],
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "Mono.Cecil.dll"
-    ],
-    "autoReferenced": true,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c57680241b5502ddde2edada012fc1be7591a7a7f803daa0a6feb8264bd205b2
+size 423

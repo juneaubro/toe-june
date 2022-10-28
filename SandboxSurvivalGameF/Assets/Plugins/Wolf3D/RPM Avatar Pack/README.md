@@ -1,9 +1,3 @@
-# Wolf3D ReadyPlayerMe Unity Character Pack
-
-**Wolf3D ReadyPlayerMe Unity Character Pack** is free sample pack of 3D Avatars made using the www.readyplayer.me avatar platform.
-
-If you would like more information on the ReadyPlayerMe platform or would like to stay up do date please visit the online documentation and join our public `discord` community.
-
-![](https://i.imgur.com/zGamwPM.png) **[Online Documentation](https://readyplayer.me/docs)**
-
-![](https://i.imgur.com/FgbNsPN.png) **[Discord Channel](https://discord.gg/9veRUu2)**
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ce83fcd2aeae9f79496698651eab6d06154dda21f8f1b06892a7d19ef884682
+size 545

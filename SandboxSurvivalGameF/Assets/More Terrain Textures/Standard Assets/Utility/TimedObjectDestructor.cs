@@ -1,27 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityStandardAssets.Utility
-{
-    public class TimedObjectDestructor : MonoBehaviour
-    {
-        [SerializeField] private float m_TimeOut = 1.0f;
-        [SerializeField] private bool m_DetachChildren = false;
-
-
-        private void Awake()
-        {
-            Invoke("DestroyNow", m_TimeOut);
-        }
-
-
-        private void DestroyNow()
-        {
-            if (m_DetachChildren)
-            {
-                transform.DetachChildren();
-            }
-            Destroy(gameObject);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70ce68aee9100e7cd4ef2e7ce08f0f515ba2747b45a2768213ddde64aaef3ef4
+size 582

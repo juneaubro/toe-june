@@ -1,30 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerAnimation : MonoBehaviour
-{
-
-    private Animator animator;
-    Rigidbody rb;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        animator = GetComponentInChildren<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        float velocityX = PlayerController.velocityX;
-        float velocityZ = PlayerController.velocityZ;
-        float speedX = rb.velocity.x;
-        float speedZ = rb.velocity.z;
-
-        //animator.SetFloat("speed", );
-        //print();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:74d6dd0e2e270b1a3e53a85d53d058d19aa0f98ed8101ec85fdd5a2134859729
+size 718

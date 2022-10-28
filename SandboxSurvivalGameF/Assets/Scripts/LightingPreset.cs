@@ -1,15 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[System.Serializable]
-[CreateAssetMenu(fileName ="Lighting Preset", menuName ="Scriptables/Lighting Preset", order =1)]
-public class LightingPreset : ScriptableObject
-{
-    public Gradient ambientColor;
-    public Gradient directionalColor;
-    public Gradient fogColor;
-
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:79a746891f7b958567d5abbbfcd49e6e205405aaeb9c5b891f17ca86a87ed251
+size 371

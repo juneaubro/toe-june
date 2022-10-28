@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class GroundCheck : MonoBehaviour {
-    public static bool isGrounded;
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "Ground")
-            isGrounded = true;
-    }
-
-    private void OnTriggerExit(Collider other) {
-        if (other.gameObject.tag == "Ground")
-            isGrounded = false;
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Ground")
-            isGrounded = true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a888b9ac53a3a3145569a857b341a32b684f6935b498e6b408f011d65b8fd768
+size 588

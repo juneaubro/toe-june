@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundCheck : MonoBehaviour {
+public class GroundCheck : MonoBehaviour 
+{
     public static bool isGrounded;
 
-    private void OnTriggerEnter(Collider other) {
-        if (other)
+    private void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.tag == "Player")
             isGrounded = true;
     }
 
-    private void OnTriggerExit(Collider other) {
-        if (other)
+    private void OnTriggerExit(Collider other) 
+    {
+        if (other.gameObject.tag == "Player")
             isGrounded = false;
     }
 }

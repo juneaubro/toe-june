@@ -1,0 +1,568 @@
+/target:library
+/out:Temp/Unity.PlasticSCM.Editor.dll
+/nowarn:0169
+/nowarn:0649
+/refout:Temp/Unity.PlasticSCM.Editor.dll.ref
+/deterministic
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:8.0
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:G:/GitHub/toe-june/SandboxSurvivalGameF/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll
+/reference:G:/GitHub/toe-june/SandboxSurvivalGameF/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/unityplastic.dll
+/reference:G:/GitHub/toe-june/SandboxSurvivalGameF/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.IO.Compression.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
+/reference:"Z:/Unity Installs/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
+/define:CROSS_PLATFORM_INPUT
+/define:CSHARP_7_3_OR_NEWER
+/define:CSHARP_7_OR_LATER
+/define:DEBUG
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_BURST_AOT
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_LZMA
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MONO
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_MOVIES
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_NETWORK
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_PHYSICS
+/define:ENABLE_PROFILER
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_VIDEO
+/define:ENABLE_VIRTUALTEXTURING
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_WWW
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:INCLUDE_DYNAMIC_GI
+/define:NET_4_6
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_SUPPORTS_MONO
+/define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+/define:RENDER_SOFTWARE_CURSOR
+/define:SCENE_TEMPLATE_MODULE
+/define:TRACE
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_2020
+/define:UNITY_2020_1_OR_NEWER
+/define:UNITY_2020_2_OR_NEWER
+/define:UNITY_2020_3
+/define:UNITY_2020_3_19
+/define:UNITY_2020_3_OR_NEWER
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:UNITY_INCLUDE_TESTS
+/define:UNITY_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_TEAM_LICENSE
+/define:USE_SEARCH_ENGINE_API
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssemblyInfo.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\AssetMenuItems.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\AssetMenuOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\AssetMenuRoutingOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\AssetOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\AssetsSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\Dialogs\CheckinDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\Dialogs\CheckinDialogOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetMenu\ProjectViewAssetSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\AssetStatus.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\AssetStatusCache.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\BuildPathDictionary.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\LocalStatusCache.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\LockStatusCache.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\RemoteStatusCache.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\Cache\SearchLocks.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetOverlays\DrawAssetOverlay.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\AssetsPath.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\LoadAsset.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\Processor\AssetModificationProcessor.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\Processor\AssetPostprocessor.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\Processor\AssetsProcessor.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\Processor\PlasticAssetsProcessor.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\ProjectPath.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\RefreshAsset.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AssetsUtils\SaveAssets.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\AutoRefresh.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Beta\CalculateUserBetaProgramSetting.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CheckWorkspaceTreeNodeStatus.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CloudProjectDownloader\AutoConfigClientConf.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CloudProjectDownloader\CloudProjectDownloader.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CloudProjectDownloader\CommandLineArguments.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CloudProjectDownloader\DownloadRepositoryOperation.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CloudProjectDownloader\ParseArguments.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\CollabPlugin.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\ChannelCertificateUiImpl.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\AutoLogin.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CloudEditionWelcomeWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CreateOrganizationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\CreatedOrganizationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\OrganizationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SSOSignUpPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SignInPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\SignInWithEmailPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\WaitingSignInPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\ConfigurePartialWorkspace.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CredentialsDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\CredentialsUIImpl.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\EncryptionConfigurationDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\MissingEncryptionPasswordPromptHandler.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\SSOCredentialsDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\TeamEdition\TeamEditionConfigurationWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\ToolConfig.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\TurnOffPlastic\TurnOffPlasticWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Configuration\WriteLogConfiguration.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\CheckinProgress.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\GenericProgress.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\IncomingChangesNotificationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\ProgressOperationHandler.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\UpdateProgress.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportLineListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\DrawGuiModeSwitcher.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\DrawIncomingChangesNotificationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\EnumExtensions.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\FindWorkspace.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\GetRelativePath.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\CheckinProgress.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\IncomingChangesNotificationPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\ProgressOperationHandler.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\UpdateProgress.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\UpdateReport\ErrorListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\BuildFormattedHelp.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\DrawHelpPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\HelpData.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\HelpFormat.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\HelpLink.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\HelpLinkData.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\HelpPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Help\TestingHelpData.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Inspector\DrawInspectorOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Inspector\InspectorAssetSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\MetaPath.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\NewIncomingChanges.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\PlasticApp.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\PlasticMenuItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\PlasticWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\PlasticWindow\PlasticSCMWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\SetupCloudProjectId.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\SwitchModeConfirmationDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\BringWindowToFront.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\FindTool.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\IsExeAvailable.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\LaunchInstaller.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\LaunchTool.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Tool\ToolConstants.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Avatar\ApplyCircleMask.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Avatar\AvatarImages.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Avatar\GetAvatar.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\BoolSetting.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\CooldownWindowDelayer.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DockEditorWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DrawActionButton.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DrawActionHelpBox.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DrawSearchField.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DrawSplitter.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DrawUserIcon.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\DropDownTextField.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EditorDispatcher.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EditorProgressBar.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EditorProgressControls.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EditorVersion.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EditorWindowFocus.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\EnumPopupSetting.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\FindEditorWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\GUIActionRunner.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\GUISpace.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\GetPlasticShortcut.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\GuiEnabled.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\HandleMenuItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Images.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\MeasureMaxWidth.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Message\DrawDialogIcon.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Message\PlasticQuestionAlert.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\NotificationDrawer.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\PlasticDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\PlasticSplitterGUILayout.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\DrawProgressForDialogs.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\DrawProgressForOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\DrawProgressForViews.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\OperationProgressData.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\ProgressControlsForDialogs.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Progress\ProgressControlsForViews.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\ResponseType.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\RunModal.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\ShowWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\SortOrderComparer.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\TabButton.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\DrawTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\GetChangesOverlayIcon.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\ListViewItemIds.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\TableViewOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\TreeHeaderColumns.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\TreeHeaderSettings.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\Tree\TreeViewItemIds.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UIElements\LoadingSpinner.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UIElements\ProgressControlsForDialogs.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UIElements\TabView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UIElements\UIElementsExtensions.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityConstants.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityEvents.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityMenuItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityPlasticGuiMessage.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityPlasticTimer.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityStyles.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UI\UnityThreadWaiter.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\UnityConfigurationChecker.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\VCSPlugin.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\ViewSwitcher.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetsListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetsListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetsSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetsTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\ChangesetsViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\DateFilter.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Changesets\LaunchDiffOperations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\CreateWorkspaceView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\CreateWorkspaceViewState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\CreateRepositoryDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoriesListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoriesListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryExplorerDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\DrawCreateWorkspaceView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\CreateWorkspace\ValidRepositoryName.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\ChangeCategoryTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\ClientDiffTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\Dialogs\GetRestorePathDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\DiffPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\DiffSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\DiffTreeView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\DiffTreeViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\GetClientDiffInfos.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\MergeCategoryTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Diff\UnityDiffTree.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\DownloadPlasticExeWindow.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\FileSystemOperation.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistoryListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistoryListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistoryListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistoryListViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistorySelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\HistoryTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\History\SaveAction.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\ChangeCategoryTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\ChangeTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\DirectoryConflicts\ConflictResolutionState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\DirectoryConflicts\DrawDirectoryResolutionPanel.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTreeHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTreeView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsCurrent.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsResolved.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Developer\UnityIncomingChangesTree.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\ChangeCategoryTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\ChangeTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorsListHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorsListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTreeHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTreeView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\Gluon\UnityIncomingChangesTree.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\IncomingChanges\IIncomingChangesTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\ChangeCategoryTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\ChangeTreeViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\CheckinConflictsDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\CheckinMergeNeededDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\DependenciesDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\FilterRulesConfirmationDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\LaunchCheckinConflictsDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\LaunchDependenciesDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\Dialogs\PendingChangesOptionsDialog.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\DrawCommentTextArea.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\FilesFilterPatternsMenuBuilder.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesMultiColumnHeader.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesSelection.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTab.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTab_Operations.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTreeHeaderState.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesTreeView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingChangesViewMenu.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingMergeLinks\MergeLinkListViewItem.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\PendingMergeLinks\MergeLinksListView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\PendingChanges\UnityPendingChangesTree.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Welcome\DownloadAndInstallOperation.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Welcome\GetInstallerTmpFileName.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Welcome\MacOSConfigWorkaround.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\Views\Welcome\WelcomeView.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\WebApi\CredentialsResponse.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\WebApi\PlasticScmRestApiClient.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\WebApi\TokenExchangeResponse.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\WebApi\UnityPackageBetaEnrollResponse.cs
+G:\GitHub\toe-june\SandboxSurvivalGameF\Library\PackageCache\com.unity.collab-proxy@1.9.0\Editor\PlasticSCM\WorkspaceWindow.cs
